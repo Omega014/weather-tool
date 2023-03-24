@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func getWeather(city string) any {
+func GetWeather(city string) any {
 
 	API_KEY := os.Getenv("WEATHER_API")
 	BASE_URL := "http://api.openweathermap.org/data/2.5/weather"

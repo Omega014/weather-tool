@@ -9,7 +9,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/omega014/weather-tool/apis"
+	"github.com/Omega014/weather-tool/apis"
 )
 
 // weatherCmd represents the weather command
