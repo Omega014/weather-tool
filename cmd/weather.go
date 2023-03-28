@@ -32,7 +32,7 @@ var weatherGetCmd = &cobra.Command{
 		city := args[0]
 
 		data := apis.GetWeather(city)
-		fmt.Println("get called: ", data)
+		fmt.Println("get called: ", data.Name)
 	},
 }
 
