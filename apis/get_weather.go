@@ -15,7 +15,7 @@ func GetWeather(city string) *viewmodel.Weather {
 	API_KEY := os.Getenv("WEATHER_API_KEY")
 	BASE_URL := "http://api.openweathermap.org/data/2.5/weather"
 
-	res, err := http.Get(BASE_URL + "?q=" + city + ",jp&appid=" + API_KEY)
+	res, err := http.Get(BASE_URL + "?q=" + city + ",&appid=" + API_KEY + "&lang=ja&units=metric")
 	if err != nil {
 		fmt.Printf("Can not get: %v", err)
 	}
