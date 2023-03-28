@@ -32,7 +32,9 @@ var weatherGetCmd = &cobra.Command{
 		city := args[0]
 
 		data := apis.GetWeather(city)
-		fmt.Println("get called: ", data.Name)
+		fmt.Println("天気: " + data.Weather[0].Description +
+			"\n気温: " + fmt.Sprintf("%.1f", data.Main.Temp) + "°C" +
+			"\n気圧: " + fmt.Sprintf("%v", data.Main.Pressure) + "hPa")
 	},
 }
 
